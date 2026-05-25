@@ -1,2 +1,2 @@
 # cv
-https://eclipzero.github.io/cv/
+https://pitxhy.github.io/cv/
