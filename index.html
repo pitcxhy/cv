@@ -1,198 +1,411 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Pitch Yen-ura</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <meta name="description" content="" />
+  <title>Pitch Yen-ura | Portfolio</title>
+  <meta name="description" content="Pitch Yen-ura personal portfolio website" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="gura.ico">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #2b5a8f;
+      --secondary-color: #4f9da6;
+      --dark-color: #1a252f;
+      --light-bg: #f8f9fa;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--dark-color);
+      background-color: #ffffff;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-img-container {
+      width: 180px;
+      height: 180px;
+      border: 5px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      position: relative;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 50px;
+      height: 4px;
+      background-color: var(--secondary-color);
+    }
+
+    /* Skills Badges & Cards */
+    .skill-badge {
+      background-color: var(--light-bg);
+      border-left: 4px solid var(--primary-color);
+      padding: 12px 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      height: 100%;
+    }
+
+    .stars {
+      color: #ffc107;
+    }
+
+    /* Timeline Styling */
+    .timeline {
+      position: relative;
+      border-left: 3px solid #e9ecef;
+      padding-left: 30px;
+      margin-left: 10px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      left: -41.5px;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: var(--secondary-color);
+      border: 4px solid #fff;
+      box-shadow: 0 0 0 3px rgba(79, 157, 166, 0.2);
+    }
+
+    .timeline-date {
+      font-weight: 700;
+      color: var(--secondary-color);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* List styling */
+    .custom-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .custom-list li {
+      padding-left: 1.5rem;
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .custom-list li::before {
+      content: "•";
+      color: var(--secondary-color);
+      font-weight: bold;
+      font-size: 1.3rem;
+      position: absolute;
+      left: 0;
+      top: -2px;
+    }
+
+    /* Project Cards inside Timeline */
+    .project-card {
+      background: var(--light-bg);
+      border: none;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 15px;
+      transition: transform 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+  </style>
 </head>
 
 <body>
-  <iframe width="1" height="1" wmode="transparent" src="https://www.youtube.com/embed/NnRjwEhFU70?autoplay=1"
-    title="YouTube video player" frameborder="0" allow="" allowfullscreen style="display: none"></iframe>
-  <div>
-    <div class="sidebar">
-      <marquee direction="left">
-        <h1><span style="color: rgb(180, 0, 255);">P</span>
-          <span style="color: rgb(150, 0, 255);">i</span>
-          <span style="color: rgb(120, 0, 255);">t</span>
-          <span style="color: rgb(90, 0, 255);">c</span>
-          <span style="color: rgb(30, 0, 255);">h</span>
-          <span style="color: rgb(0, 30, 255);">'</span>
-          <span style="color: rgb(0, 60, 255);">s</span>&nbsp;&nbsp;
-          <span style="color: rgb(0, 90, 255);">P</span>
-          <span style="color: rgb(0, 120, 255);">e</span>
-          <span style="color: rgb(0, 150, 255);">r</span>
-          <span style="color: rgb(0, 225, 255);">s</span>
-          <span style="color: rgb(0, 255, 191);">o</span>
-          <span style="color: rgb(0, 255, 85);">n</span>
-          <span style="color: rgb(94, 255, 0);">a</span>
-          <span style="color: rgb(115, 255, 0);">l</span>&nbsp;
-          <span style="color: rgb(179, 255, 0);">W</span>
-          <span style="color: rgb(229, 255, 0);">e</span>
-          <span style="color: rgb(255, 208, 0);">b</span>
-          <span style="color: rgb(255, 123, 0);">p</span>
-          <span style="color: rgb(255, 90, 0);">a</span>
-          <span style="color: rgb(255, 60, 0);">g</span>
-          <span style="color: rgb(255, 0, 0);">e</span>
-      </marquee>
-    </div>
-    <div class="cover">
-      <img class="coverimg" src="images/cover.jpg" alt="" />
-      <img class="profileimg" src="images/profile-c.png" alt="" />
-      <h1 class="name">Pitch Yen-ura (Oat)</h1>
-    </div>
-    <div class="personal">
-      <div class="intro">
-        <h2>Intro</h2>
-		<br>
-        <img class="icon-image" src="images/study-icon.png" alt="" />
-        <p>
-          Studied at Computer Engineering Department, Kmutt
-        </p>
 
-        <img class="icon-image" src="images/study-icon.png" alt="" />
-        <p>
-          Studied at Suksanareewittaya School
-        </p>
-
-        <img class="icon-image" src="images/home-icon.png" alt="" />
-        <p>
-          Lives in Bangkok, Thailand
-        </p>
-        <br />
-        <p>Contact</p>
-        <ul>
-          <li>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pitch.yenura/">Facebook</a>
-          </li>
-          <li>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/py_littleoat/">Instagram</a>
-          </li>
-          <li>
-            <a target="_blank" rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/pitch-yen-ura-ab4617181/">Linked-in</a>
-          </li>
-        </ul>
-        <br /><br />
+  <header class="hero-section text-center text-md-start">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-3 text-center">
+          <div class="profile-img-container">
+            <img src="images/profile-c.png" alt="Pitch Yen-ura" onerror="this.src='https://via.placeholder.com/150'">
+          </div>
+        </div>
+        <div class="col-md-9 mt-4 mt-md-0">
+          <h1 class="display-4 fw-bold mb-2">Pitch Yen-ura</h1>
+          <p class="lead mb-4">Full Stack Developer</p>
+          <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+            <a href="#about" class="btn btn-outline-light btn-sm px-4 py-2">About Me</a>
+            <a href="#experience" class="btn btn-light btn-sm px-4 py-2 text-primary fw-bold">Experience</a>
+          </div>
+        </div>
       </div>
-      <div class="skill">
-        <div id="left">
-          <h2>Skill</h2>
-          <br />
-          <p>Coding Skill</p>
-          <table>
-            <tr>
-              <td>C language</td>
-              <td>⭐⭐⭐⭐</td>
-              <td>Python</td>
-              <td>⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td>Node.js</td>
-              <td>⭐⭐⭐</td>
-              <td>C#</td>
-              <td>⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td>Angular</td>
-              <td>⭐⭐⭐</td>
-              <td>React</td>
-              <td>⭐⭐</td>
-            </tr>
-          </table>
-          <br />
-          <p>Hobbies</p>
-          <ul>
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <div class="row g-5">
+
+      <main class="col-lg-4" id="about">
+        <div class="mb-5">
+          <h3 class="section-title">Intro</h3>
+          <div class="d-flex align-items-start mb-3">
+            <i class="bi bi-mortarboard-fill text-muted me-3 fs-4"></i>
+            <div>
+              <p class="mb-0">Studied at Computer Engineering Department, <strong>KMUTT</strong></p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start mb-3">
+            <i class="bi bi-building text-muted me-3 fs-4"></i>
+            <div>
+              <p class="mb-0">Studied at Suksanareewittaya School</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start mb-4">
+            <i class="bi bi-geo-alt-fill text-muted me-3 fs-4"></i>
+            <div>
+              <p class="mb-0">Lives in Bangkok, Thailand</p>
+            </div>
+          </div>
+
+          <div class="d-grid gap-2">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/pitch-yen-ura-ab4617181/"
+              class="btn btn-outline-dark btn-sm text-start">
+              <i class="bi bi-linkedin me-2"></i> Linked-in
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pitch.yenura/"
+              class="btn btn-outline-primary btn-sm text-start">
+              <i class="bi bi-facebook me-2"></i> Facebook
+            </a>
+            <a href="mailto:pitch.yenura@gmail.com" class="btn btn-outline-danger btn-sm text-start">
+              <i class="bi bi-envelope-fill me-2"></i> Email
+            </a>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <h3 class="section-title">Skills</h3>
+          <div class="row g-2">
+            <div class="col-6">
+              <div class="skill-badge">
+                <span class="fw-bold d-block">C</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="skill-badge">
+                <span class="fw-bold d-block">C#</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="skill-badge">
+                <span class="fw-bold d-block">Python</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="skill-badge">
+                <span class="fw-bold d-block">Node.js</span>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="skill-badge">
+                <span class="fw-bold d-block">Angular</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="skill-badge">
+                <span class="fw-bold d-block">React</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="skill-badge">
+                <span class="fw-bold d-block">Flutter</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="skill-badge">
+                <span class="fw-bold d-block">AWS</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="skill-badge">
+                <span class="fw-bold d-block">Android</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="skill-badge">
+                <span class="fw-bold d-block">SpringBoot</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <h3 class="section-title">Interests</h3>
+          <h6 class="fw-bold text-muted text-uppercase mb-2" style="font-size: 0.8rem;">Hobbies</h6>
+          <ul class="custom-list mb-4">
             <li>Playing Guitar</li>
-            <li>Listen to misuc</li>
+            <li>Listening to music</li>
             <li>Reading manga</li>
           </ul>
 
-          <p>Favorites Song</p>
-          <ul>
-            <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/d9IxdwEFk1c">Palette</a>
-              - IU
-            </li>
-            <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/nM0xDI5R50E">BBIBBI</a>
-              - IU
-            </li>
-            <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/BzYnNdJhZQw">Through the night</a>
-              - IU
-            </li>
-          </ul>
+          <h6 class="fw-bold text-muted text-uppercase mb-2" style="font-size: 0.8rem;">Favorite Tracks</h6>
+          <div class="list-group list-group-flush">
+            <a href="https://youtu.be/d9IxdwEFk1c" target="_blank" rel="noopener noreferrer"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 py-2">
+              <span><i class="bi bi-music-note-beamed me-2 text-secondary"></i> Palette - IU</span>
+              <i class="bi bi-box-arrow-up-right text-muted small"></i>
+            </a>
+            <a href="https://youtu.be/nM0xDI5R50E" target="_blank" rel="noopener noreferrer"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 py-2">
+              <span><i class="bi bi-music-note-beamed me-2 text-secondary"></i> BBIBBI - IU</span>
+              <i class="bi bi-box-arrow-up-right text-muted small"></i>
+            </a>
+            <a href="https://youtu.be/BzYnNdJhZQw" target="_blank" rel="noopener noreferrer"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 py-2">
+              <span><i class="bi bi-music-note-beamed me-2 text-secondary"></i> Through the Night - IU</span>
+              <i class="bi bi-box-arrow-up-right text-muted small"></i>
+            </a>
+          </div>
         </div>
-        <div id="right">
-          <h2 style="opacity: 0">Skill</h2>
-          <br />
-          <p>Education and Experience</p>
-          <table>
-            <tr>
-              <td><b>Year</b></td>
-              <td><b>Events</b></td>
-            </tr>
-            <tr>
-              <td>2019</td>
-              <td>Graduated from KMUTT</td>
-            </tr>
-            <tr>
-              <td>2019-Now</td>
-              <td>Utilities Solution Developer at CDG Group</td>
-            </tr>
-          </table>
+      </main>
+
+      <section class="col-lg-8 pt-0" id="experience">
+        <h3 class="section-title">Work & Education Experience</h3>
+
+        <div class="timeline mt-4">
+          <div class="timeline-item">
+            <span class="timeline-date">2021 - Present</span>
+            <h4 class="h5 fw-bold mb-1">Software Engineer</h4>
+            <span class="badge bg-secondary-subtle text-secondary mb-3">Bank of Ayudhya (Krungsri)</span>
+            <p class="text-muted">พัฒนาแอปพลิเคชันไลฟ์สไตล์และการขอสินเชื่อยานยนต์</p>
+
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-card">
+                  <h5 class="h6 fw-bold text-primary"><i class="bi bi-globe me-2"></i>GO by Krungsri Auto</h5>
+                  <p class="small text-muted mb-0">Mobile App —
+                    แอปพลิเคชันสำหรับการขอสินเชื่อยานยนต์</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2019 - 2021</span>
+            <h4 class="h5 fw-bold mb-1">Utilities Solution Developer</h4>
+            <span class="badge bg-secondary-subtle text-secondary mb-3">CDG Group</span>
+            <p class="text-muted">พัฒนาและบูรณาการซอฟต์แวร์ระบบแผนที่และระบบบริหารจัดการข้อมูลทรัพยากร</p>
+
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="project-card">
+                  <h5 class="h6 fw-bold text-primary"><i class="bi bi-globe me-2"></i>Water Hyacinth Tracking System
+                    (DPT)</h5>
+                  <p class="small text-muted mb-0">Web Developer —
+                    ระบบรวบรวมข้อมูลความคืบหน้าการกำจัดผักตบชวาและแสดงผลเชิงตำแหน่งบนแผนที่</p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="project-card">
+                  <h5 class="h6 fw-bold text-primary"><i class="bi bi-folder-check me-2"></i>Resource Management for DPT
+                  </h5>
+                  <p class="small text-muted mb-0">Web Developer — ระบบบริหารจัดการงบประมาณและจัดทำรายงานสรุปข้อมูล</p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="project-card">
+                  <h5 class="h6 fw-bold text-primary"><i class="bi bi-chat-left-dots me-2"></i>Power Outage Notification
+                    System</h5>
+                  <p class="small text-muted mb-0">Line@ Integration — ระบบแจ้งเตือนพื้นที่ไฟฟ้าดับผ่าน Line
+                    บูรณาการร่วมกับระบบพิกัดแผนที่เพื่อแจ้งเตือนผู้ใช้ในพื้นที่ผลกระทบได้แม่นยำ</p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="project-card">
+                  <h5 class="h6 fw-bold text-primary"><i class="bi bi-cpu me-2"></i>Image Processing & OCR (POC)</h5>
+                  <p class="small text-muted mb-1">Python & Android Platforms</p>
+                  <p class="small text-muted mb-0">วิจัยและทำระบบต้นแบบแกะค่าตัวเลขจากมิเตอร์ไฟฟ้าด้วยภาพถ่าย
+                    (ผ่านแอปมือถือและระบบสคริปต์) พร้อมส่งข้อมูลเข้าสู่ Geodatabase</p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="project-card">
+                  <h5 class="h6 fw-bold text-primary"><i class="bi bi-gear-fill me-2"></i>ArcFM Session Manager</h5>
+                  <p class="small text-muted mb-0">.NET Developer — เครื่องมือจัดการ Geodatabase session
+                    และบันทึกการตั้งค่าใช้งานรายผู้ใช้</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">August 2015 - May 2019</span>
+            <h4 class="h5 fw-bold mb-1">Smart Home for Elderly (Graduation Project)</h4>
+            <span class="badge bg-primary-subtle text-primary mb-2">KMUTT</span>
+            <p class="text-muted small">
+              แบบจำลองบ้านอัจฉริยะเพื่อช่วยเหลือผู้สูงอายุให้ใช้ชีวิตได้สะดวกและปลอดภัยยิ่งขึ้น
+              มาพร้อมระบบตรวจจับการหกล้มเพื่อแจ้งเตือนเหตุฉุกเฉิน</p>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="badge bg-light text-dark border">Raspberry Pi</span>
+              <span class="badge bg-light text-dark border">Micro:bit</span>
+              <span class="badge bg-light text-dark border">Python</span>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">2019</span>
+            <h4 class="h5 fw-bold mb-0">Graduated from KMUTT</h4>
+            <p class="text-muted small">Bachelor of Engineering (Computer Engineering)</p>
+          </div>
+
         </div>
-      </div>
-      <div class="workexp">
-        <h2>Work Experience</h2>
-        <p>JULY 2019 - NOW</p>
-        <ul>
-          <li>
-            <p><b>Web Developer | Water Hyacinth tracking sytem for DPT</b></p>
-            <p>To collect data of water hyacinth disposal progress and display on map.</p>
-          </li>
-          <li>
-            <p><b>Web Developer | Resource management for DPT</b></p>
-            <p>About budget management and create report.</p>
-          </li>
-          <li>
-            <p><b>Web integrate with Line@ | Power outage notification</b></p>
-            <p>Display outage area on the map and sent line messages to users when user live in outage area.</p>
-          </li>
-          <li>
-            <p><b>Python | Image processing (POC)</b></p>
-            <p>Read electric meter from image file and collect to geodatabase.</p>
-          </li>
-          <li>
-            <p><b>Android | Image processing (POC)</b></p>
-            <p>Read electric meter from image file or capture from camera and collect to geodatabase.</p>
-          </li>
-          <li>
-            <p><b>.Net | ArcFM Session manager</b></p>
-            <p>Using for manage geodatabase session and collect user session setting</p>
-          </li>
-        </ul>
-        <p>AUGUST 2015 - MAY 2019</p>
-        <ul>
-          <li>
-            <p><b>Smart Home for Elderly</b></p>
-            <p> - Smart home model that help elderly live more convenience and falling detection to help elderly in
-              emergency situation</p>
-            <p> - Using RaspberryPi, Micro:bit, and House model</p>
-            <p> - Programming Language | Python</p>
-          </li>
-        </ul>
-      </div>
+      </section>
+
     </div>
   </div>
+
+  <footer class="bg-light text-center py-4 border-top mt-5">
+    <p class="text-muted small mb-0">&copy; 2026 Pitch Yen-ura. Designed with modern standards.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
